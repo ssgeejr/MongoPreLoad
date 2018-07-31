@@ -143,7 +143,7 @@ gsma
 
 ```
 
-#### slect random first row
+#### select a single random entry
 
 ```
 > db.gsma.findOne();
