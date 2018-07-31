@@ -10,7 +10,7 @@ RUN chown -R mongodb:mongodb /data/db2 \
 && chown -R mongodb:mongodb /files
 
 RUN mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db2 --smallfiles && sleep 20 \
-    && mongoimport --db sku --collection gsma --type csv --headerline --file /files/GSMAfulltable.csv \
+    && mongoimport --db sku --collection gsma --type csv --headerline --file /files/mock_data.csv \
     && mongod --dbpath /data/db2 --shutdown \
     && chown -R mongodb /data/db2
 
