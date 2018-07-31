@@ -113,11 +113,9 @@ jq: error (at /tmp/docker-entrypoint-config.json:1): Cannot index string with st
 ### start the client 
 
 ```
-
-
-```
 docker run --name client --rm -ti --link seeded:seeded seededmongo /bin/bash
 ```
+
 you'll see a bunch of spam here ... 
 
 ```
