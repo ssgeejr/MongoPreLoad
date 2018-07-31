@@ -116,7 +116,10 @@ jq: error (at /tmp/docker-entrypoint-config.json:1): Cannot index string with st
 docker run --name client --rm -ti --link seeded:seeded seededmongo /bin/bash
 ```
 
-you'll see a bunch of spam here ... 
+you'll see a bunch of spam here ... just wait for the command prompt
+
+
+#### show the databases
 
 ```
 > show dbs;
